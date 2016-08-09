@@ -1,0 +1,226 @@
+body{
+    background-color: #378aca;
+}
+.nokt-bg{
+    background: url('../images/bg.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height:800px;
+    color:white;
+}
+.nokt-donation-article-wrapper{
+    float:right;
+}
+.nokt-donation-article{
+    text-align:center;
+}
+.nokt-inv-separator{
+    height:50px;
+}
+.nokt-latest-donations{
+    color:lightblue;
+}
+.thumbnail{
+    padding:0;
+    border:0;
+}
+.nokt-thumbnail h4{
+    color: #6686e6;
+    font-weight:bold;
+}
+.nokt-thumbnail p{
+    color:darkgrey;
+}
+.nokt-latest-donations h3{
+    color: #78a2b3;
+
+}
+.pusher{
+    margin-top:30px;
+}
+.nokt-footer{
+    background: #133147;
+    padding-top:50px;
+    color:white;
+    padding-bottom:50px;
+}
+.svg{
+    color:lightblue;
+}
+.svg h3{
+    color:darkblue;
+}
+.nokt-footer-widget{
+    margin-top:45px;
+}
+.row{
+
+    margin-left:0;
+    margin-right:0;
+}
+#navbar-primary .navbar-nav {
+    width: 100%;
+    text-align: center;
+}
+
+#navbar-primary .navbar-nav li {
+    display: inline-block;
+    float: none;
+}
+
+#navbar-primary .navbar-nav li a {
+    padding-left: 30px;
+    padding-right: 30px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.nokt-footer-widget a {
+    color: white;
+}
+
+#navbar-primary .navbar-nav li a:hover {
+    background: transparent;
+
+}
+
+#logo-navbar-middle {
+    height: 40px;
+    width: auto;
+}
+
+.header-heading {
+    margin-top: 250px;
+    text-align: center;
+
+}
+.hamby{
+    display:none;
+}
+@media only screen and (min-width : 768px) {
+    .banner{
+        display:block;
+    }
+
+}
+
+@media only screen and (max-width : 768px) {
+    .nokt-feature-text, .text {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    .banner{
+        display:none;
+    }
+    .hamby{
+        display:block;
+    }
+    nav input {
+        display: none;
+    }
+    nav label {
+        position: absolute;
+        top: 50px;
+        right: 10px;
+        top: 10px;
+        z-index: 999;
+        cursor: pointer;
+    }
+    nav label strong {
+        padding: 0 10px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px!important;
+        font: 700 14px Lato, helvetica, sans-serif;
+        color: #fff;
+        text-transform: uppercase;
+        position: absolute;
+        right: 40px;
+        top: 0px;
+        transition: color 250ms ease;
+    }
+    nav label b {
+        width: 40px;
+        height: 40px;
+        display: block;
+        position: relative;
+        right: 0;
+        top: 0;
+        cursor: pointer;
+        transition: background 500ms ease;
+    }
+    nav label b i {
+        display: block;
+        background: #fff;
+        width: 24px;
+        height: 4px;
+        position: absolute;
+        left: 8px;
+        top: 11px;
+        border-radius: 1000px;
+        transform-origin: 20px 4px;
+        transition: transform 300ms cubic-bezier(0.09, 0.92, 0, 1.435), opacity 500ms ease;
+    }
+    nav label b i:nth-child(2) {
+        top: 18px;
+    }
+    nav label b i:nth-child(3) {
+        transform-origin: 26px 4px;
+        top: 25px;
+    }
+    nav menu {
+        background: #66a0e6;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        overflow: auto;
+        transition: opacity 300ms ease;
+        position: fixed;
+        z-index: 998;
+        top: -15px;
+    }
+    nav menu li {
+        margin: 0;
+        list-style: none;
+        width: 100%;
+    }
+    nav menu li:first-child {
+        margin-top: 60px;
+    }
+    nav menu li:first-child a {
+        border-top: rgba(255, 255, 255, 0.2) 1px solid;
+    }
+    nav menu li a {
+        padding: 20px 0;
+        font: 100 18px Lato, helvetica, sans-serif;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
+        color: #fff;
+        display: block;
+        border-bottom: rgba(255, 255, 255, 0.2) 1px solid;
+    }
+    nav menu li a:hover {
+        background: rgba(0, 0, 0, 0.1);
+    }
+    nav #nav:checked ~ label strong {
+        color: rgba(255, 255, 255, 0.25);
+    }
+    nav #nav:checked ~ label b {
+        transition-delay: 100ms;
+    }
+    nav #nav:checked ~ label b i:nth-child(1) {
+        transform: rotate(45deg) translate(6px, 11px);
+    }
+    nav #nav:checked ~ label b i:nth-child(2) {
+        opacity: 0;
+    }
+    nav #nav:checked ~ label b i:nth-child(3) {
+        transform: rotate(-45deg) translate(10px, -14px);
+    }
+    nav #nav:checked ~ menu {
+        opacity: 1;
+    }
+}
