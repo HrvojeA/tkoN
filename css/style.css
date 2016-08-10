@@ -1,5 +1,7 @@
 body{
     background-color: #378aca;
+    font-family:'Lato';
+    font-weight: 300;
 }
 .nokt-bg{
     background: url('../images/bg.png') no-repeat center center fixed;
@@ -7,14 +9,14 @@ body{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height:800px;
+    height:1000px;
     color:white;
 }
 .nokt-donation-article-wrapper{
     float:right;
 }
 .nokt-donation-article{
-    text-align:center;
+
 }
 .nokt-inv-separator{
     height:50px;
@@ -33,9 +35,69 @@ body{
 .nokt-thumbnail p{
     color:darkgrey;
 }
-.nokt-latest-donations h3{
-    color: #78a2b3;
 
+.nokt-donations-heading{
+    color: #2193e6;
+}
+.nokt-da-price{
+    font-weight:bold;
+}
+.nokt-da-date{
+    color: #8f9098;
+}
+.nokt-container{
+    background-color: white;
+    margin-top:90px;
+    padding:100px;
+    color:darkgrey;
+
+}
+
+@media only screen and (max-width : 1024px) {
+    .nokt-container{
+
+        padding:5px;
+
+
+    }
+}
+
+.nokt-donations-listing-potrebitima, .nokt-donations-listing-udruzi{
+    margin-top:25px;
+    margin-bottom:25px;
+}
+.nokt-donations-listing-potrebitima .nokt-da-price{
+    color:black;
+}
+.nokt-donations-listing-udruzi  .nokt-da-price{
+    color:black;
+}
+.nokt-donations-listing-heading{
+    color: #2193e6;
+    margin-bottom:50px;
+    margin-top:50px;
+}
+.nokt-quote{
+    margin-top:50px;
+    margin-bottom:50px;
+    border-left:3px solid #133147;
+    padding-left:30px;
+}
+.about-us{
+    line-height: 35px;
+}
+.nokt-post-listing{
+    border-bottom:1px solid lightgray;
+    padding-bottom:35px;
+    padding-top:35px;
+}
+.nokt-post-listing img{
+    width:100%;
+    height:auto;
+    line-height:15px;
+}
+.nokt-post-listing h3{
+    color:#2193e6;
 }
 .pusher{
     margin-top:30px;
@@ -45,6 +107,9 @@ body{
     padding-top:50px;
     color:white;
     padding-bottom:50px;
+}
+.divider{
+    margin-top:15px;
 }
 .svg{
     color:lightblue;
